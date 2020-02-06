@@ -1,0 +1,211 @@
+.container{
+    width: 800px;
+    height: 500px;
+  position: relative;
+ 
+    overflow: hidden;
+    background-color: rgb(65, 169, 230);
+    animation-name: skycolor;
+    animation-iteration-count: 1; 
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    
+
+  
+}
+#mountain{
+    top: 26px;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    height: 500px;
+    z-index: 3;
+}
+.sun{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 50px;
+    left: 336px;
+    animation-name: sunmove;
+    animation-duration: 10s;
+    background-color: orange;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; 
+    animation-direction: reverse;
+}
+.cloud{
+    
+    animation-iteration-count: 1; 
+    object-fit: cover;
+    position: absolute;
+  
+    
+
+}
+.cloud-one{
+    width: 197px;
+    z-index: 4;
+    height: 126px;
+    top: 26px;
+    left: 16px;
+    animation-name: cloudmove-one;
+    animation-duration: 10s;
+    animation-direction: reverse;
+    
+    animation-timing-function: linear;
+}
+.cloud-two{
+    width: 154px;
+    height: 95px;
+    top: 135px;
+    left: 247px;
+    animation-name: cloudmove-two;
+    animation-duration: 10s;
+ 
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+.cloud-three{
+    width: 154px;
+    height: 95px;
+    top: 99px;
+ 
+    right: 44px;
+    animation-name: cloudmove-three;
+    animation-duration: 10s;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+.star{
+    width: 20px;
+    opacity: 0;
+    animation-iteration-count: 1; 
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-name: starappear;
+}
+.star-one{
+    position: absolute;
+    bottom: 171px;
+    left: 100px;
+
+
+}
+.star-two{
+    position: absolute;
+    top: 60px;
+    left: 468px;
+}
+.star-three{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+.star-four{
+    position: absolute;
+    top: 190px;
+    left: 264px;
+}
+.star-five{
+    position: absolute;
+    right: 112px;
+    top: 96px;
+}
+@keyframes starappear{
+   
+    0%{
+       opacity: 0;
+    }
+    
+    60%{
+      opacity: 1;
+    
+    }
+    100%{
+        opacity: 0;
+      
+      }
+ 
+} 
+@keyframes sunmove{
+   0%{
+    top: 50px;
+    left: 336px;
+   }
+   50%{
+    top: 450px;
+    left: 336px;
+   }
+   100%{
+    top: 50px;
+    left: 336px;
+   }
+} 
+@keyframes skycolor{
+    0%{
+        background-color: rgb(65, 169, 230);
+       }
+       50%{
+        background-color: rgb(20, 20, 48);
+       }
+       100%{
+        background-color: rgb(65, 169, 230);
+       }
+    
+ } 
+ @keyframes cloudmove-one{
+   
+       0%{
+        top: 26px;
+        left: 16px;
+       }
+       50%{
+        top: 26px;
+        left: calc(800px - 500px);
+       }
+       100%{
+        top: 26px;
+        left: 16px;
+       
+       }
+    
+ } 
+ @keyframes cloudmove-two{
+   
+    0%{
+        top: 135px;
+        left: 247px;
+    }
+    50%{
+     top: 135px;
+     left: calc(800px - 324px);
+    }
+    100%{
+        top: 135px;
+        left: 247px;
+    
+    }
+ 
+} 
+@keyframes cloudmove-three{
+   
+    0%{
+        top: 99px;
+        right: 44px;
+    }
+    50%{
+        top: 99px;
+     right: calc(800px - 314px);
+    }
+    100%{
+        top: 99px;
+        right: 44px;
+    
+    }
+ 
+} 
+
+
